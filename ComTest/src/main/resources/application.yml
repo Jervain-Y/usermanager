@@ -1,0 +1,17 @@
+server:
+    port: 8080
+    contextPath: /com
+spring:
+  freemarker:
+    request-context-attribute: request
+    template-loader-path: classpath:/webapp/templates/
+  datasource:
+    url: jdbc:mysql://localhost/usermanager?characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/webapp/static/
+debug: false
